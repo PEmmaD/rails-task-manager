@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170207103538) do
+ActiveRecord::Schema.define(version: 20170207114503) do
 
   create_table "tasks", force: :cascade do |t|
     t.string   "name"
     t.text     "content"
-    t.boolean  "status"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "status",     default: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
 end
